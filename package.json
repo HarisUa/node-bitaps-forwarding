@@ -1,8 +1,9 @@
 {
   "name": "bitaps-forwarding",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A RESTful API package for bitaps payment forwarding",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "test": "mocha --timeout 10000",
     "build": "tsc"
@@ -12,6 +13,16 @@
     "url": "git+https://github.com/HarisUa/node-bitaps-forwarding.git"
   },
   "author": "harisdevs",
+  "keywords": [
+    "ethereum",
+    "bitaps",
+    "bitaps-forwarding",
+    "node-bitaps-forwarding",
+    "payment",
+    "merchant",
+    "eth",
+    "forwarding"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/HarisUa/node-bitaps-forwarding/issues"
