@@ -4,7 +4,7 @@
 
 ## Installation
 
-```
+```shell
 $ npm i bitaps-forwarding
 ```
 
@@ -12,7 +12,7 @@ $ npm i bitaps-forwarding
 
 #### Create forwarding address
 
-```
+```ts
 address(forwarding_address?: string, callback_link?: string, confirmations?: number);
 ```
 
@@ -24,7 +24,7 @@ address(forwarding_address?: string, callback_link?: string, confirmations?: num
 
 #### Request status and statistics of the payment address.
 
-```
+```ts
 state(address: string, token?: string)
 ```
 
@@ -34,7 +34,7 @@ state(address: string, token?: string)
 
 #### Request status and statistics of the payment address.
 
-```
+```ts
 transactions(address: string, params?: TransactionParams, token?: string)
 ```
 
@@ -46,7 +46,7 @@ transactions(address: string, params?: TransactionParams, token?: string)
 
 ## Example
 
-```
+```ts
 let Bitaps = require("bitaps-forwarding");
 
 let eth = "0x65a502a96b7da631b68101b3f7b193448dac36a4"; // Address for payout.
@@ -63,6 +63,6 @@ bitaps.address(eth).then(e => console.log(e)); // Create forwarding address
 
 ## Test
 
-```
+```shell
 $ npm test
 ```
